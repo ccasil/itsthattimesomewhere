@@ -1,9 +1,25 @@
-<p>The current time is:
-    <span id="time"></span>
-</p>
-<button id="time-btn">Get current time</button>
-<script>
-     document.getElementById('time-btn').onclick = () => {
-          document.getElementById('time').innerHTML = new Date().toString();
-     }
-</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Wat Time</title>
+    <!-- <link href="../favicon.ico" rel="icon" type="image/x-icon" /> -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="/style.css">
+</head>
+
+
+<body class="container">
+    <p class="test">The current time is:
+        <span id="time"></span>
+    </p>
+    <button id="time-btn" class="btn btn-secondary">Get current time</button>
+</body>
+
+
+<script src="/main.js"></script>
+<!-- <script src="/node_modules/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script> -->
+</html>
