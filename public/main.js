@@ -6,7 +6,7 @@ setInterval(function () {
   let currenthours = calculatehours();
   let currentminutes = calculateminutes();
   let currentseconds = (60-(new Date().getSeconds())).toString();
-  const newnum = currenthours + ' hours and ' +currentminutes + ' minutes and ' + currentseconds + ' seconds until the next x:20';
+  const newnum = currenthours + ' hours and ' + currentminutes + ' minutes and ' + currentseconds + ' seconds until the next x:20';
   document.getElementById('time').innerText = newnum;
   // console.log(newnum);
   return newnum;
@@ -36,6 +36,13 @@ function calculatehours() {
   return hourtemp.toString();
 }
 
+setInterval(function () {
+  var now = new Date();
+  var mins = now.getMinutes();
+  var secs = now.getSeconds();
+  var response = "it will be " + (80 - mins - 1) + " minutes and " + (60 - secs) + " seconds until the next x:20";
+  document.getElementById('responsehour').innerText = response;
+}, 1000);
 
 button.addEventListener('click', function (e) {
   subtext.innerHTML += '<p>add</p>';
